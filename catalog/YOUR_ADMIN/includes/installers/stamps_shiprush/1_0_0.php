@@ -48,6 +48,7 @@ $db->Execute("INSERT INTO " . TABLE_CONFIGURATION . " (configuration_title, conf
 ('Retrieve Update Status', 'STAMPS_SHIPRUSH_GET_UPDATE', 'false', 'Retrieve Order Status 4 ussually called update', " . $configuration_group_id . ", 17, NOW(), NOW(), NULL, 'zen_cfg_select_option(array(\'true\', \'false\'),'),
 ('Retrieve Cancelled Status', 'STAMPS_SHIPRUSH_GET_CANCELLED', 'false', 'Retrieve Order Status 5 ussually called cancelled', " . $configuration_group_id . ", 18, NOW(), NOW(), NULL, 'zen_cfg_select_option(array(\'true\', \'false\'),'),
 ('Set Shipped to Status Delivered', 'STAMPS_SHIPRUSH_SET_DELIVERED', 'true', 'Set order to status 3 ussually called delivered when shipped', " . $configuration_group_id . ", 19, NOW(), NOW(), NULL, 'zen_cfg_select_option(array(\'true\', \'false\'),'),
+('Only Allow Stamps to get UnShipped Orders Only', 'STAMPS_SHIPRUSH_GET_UNSHIPPED', 'true', 'Allow Stamps to get the unshipped orders only', " . $configuration_group_id . ", 19, NOW(), NOW(), NULL, 'zen_cfg_select_option(array(\'true\', \'false\'),'),
 ('Cancelled Order Status ID', 'STAMPS_SHIPRUSH_CANCELLED_STATUS_ID', '5', 'Cancelled Shipping Status', " . $configuration_group_id . ", 20, NOW(), NOW(), 'zen_get_order_status_name', 'zen_cfg_pull_down_order_statuses(');" );
 
 /* If your checking for a field

@@ -9,6 +9,8 @@ function true_false_to_int($value){
     }
 }
 
+define("HTTP_GET_ENABLED",1);//allow get method
+define("GetUnshippedOrdersOnly",true_false_to_int(STAMPS_SHIPRUSH_GET_UNSHIPPED));
 define("ZENCART_ADMIN_DIRECTORY",STAMPS_SHIPRUSH_ADMIN_DIR); 
 define("ZENCART_RETRIEVE_ORDER_STATUS_1_PENDING",true_false_to_int(STAMPS_SHIPRUSH_GET_PENDING));
 define("ZENCART_RETRIEVE_ORDER_STATUS_2_PROCESSING",true_false_to_int(STAMPS_SHIPRUSH_GET_PROCESSING));
