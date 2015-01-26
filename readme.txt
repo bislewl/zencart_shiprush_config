@@ -1,4 +1,4 @@
-ZENCART STAMPS SHIPRUSH CONFIGURATION.
+ZENCART STAMPS.com SHIPRUSH CONFIGURATION.
 V1.0.1
 
 By using this you agree to the license.txt included
@@ -12,7 +12,7 @@ You will need to have a subscription to Stamps.com
 Installation Instructions
 ============
 1.) Install Stamps from http://www.stamps.com/download/
-2.) Copy these file from the stamps into your catalog/store directory
+2.) Copy these file from the stamps.com into your catalog/store directory
         - ShippingZClasses.php
         - ShippingZMessages.php
         - ShippingZZencart.php
