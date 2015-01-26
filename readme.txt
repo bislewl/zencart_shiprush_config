@@ -1,5 +1,5 @@
-ZENCART STAMPS CONFIGURATION.
-V1.0.0
+ZENCART STAMPS SHIPRUSH CONFIGURATION.
+V1.0.1
 
 By using this you agree to the license.txt included
 
@@ -12,10 +12,27 @@ You will need to have a subscription to Stamps.com
 Installation Instructions
 ============
 1.) Install Stamps from http://www.stamps.com/download/
-2.) Copy the files include in this zip, to your store renaming YOUR_ADMIN to your admin directory
-3.) Load the admin, the module will self install on first pageload
-4.) Configure the settings in your zencart admin with the setting in on your PC for the stamps program
-5.) Test your Settings
+2.) Copy these files form the stamps into your catalog/store directory
+        - ShippingZClasses.php
+        - ShippingZMessages.php
+        - ShippingZZencart.php
+3.) Copy the files include in this zip, to your store renaming YOUR_ADMIN to your admin directory
+4.) Modify the ShippingZZencart.php, 
+        CUT:    // Check for zencart include files
+                if(Check_Include_File('includes/application_top.php'))
+                require('includes/application_top.php');
+        PASTE above:
+                //Check for ShippingZ integration files
+                if(Check_Include_File("ShippingZSettings.php"))
+                include("ShippingZSettings.php");
+                if(Check_Include_File("ShippingZClasses.php"))
+                include("ShippingZClasses.php");
+                if(Check_Include_File("ShippingZMessages.php"))
+                include("ShippingZMessages.php");
+
+5.) Load the admin, the module will self install on first pageload
+6.) Configure the settings in your zencart admin with the setting in on your PC for the stamps program
+7.) Test your Settings
 
 NOTE: The following Stamps ShipRush Files Have been modified:
 ShippingZsettings.php
