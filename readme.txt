@@ -1,5 +1,5 @@
 ZENCART STAMPS.com SHIPRUSH CONFIGURATION.
-V1.0.1
+V1.0.2
 
 By using this you agree to the license.txt included
 
